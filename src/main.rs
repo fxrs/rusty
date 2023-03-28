@@ -64,7 +64,7 @@ async fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
 
     let openai_request = OpenAIRequest {
         model,
-        prompt: format!("{} Text:{}. Command:", default_prompt, user_input),
+        prompt: format!("{} Text:{}.", default_prompt, user_input),
         max_tokens: 2048,
         stop,
     };
